@@ -72,11 +72,6 @@ content = """
     </body>
 </html>
 """
-from http.server import HTTPServer, BaseHTTPRequestHandler
-content = """
-<!DOCTYPE html>
-
-"""
 class myhandler(BaseHTTPRequestHandler):
     def do_GET(self):
         print("request received")
